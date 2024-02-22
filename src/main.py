@@ -12,6 +12,8 @@ import Manager as mgr
 # Role that is allowed to use the Point Bot
 pointRole = 'POINT_GOD'
 
+# test
+
 # =======================================================================
 intents = discord.Intents.default()
 intents.members = True
