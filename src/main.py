@@ -9,10 +9,10 @@ import Manager as mgr
 
 # Point Bot Main Class
 
+# test
+
 # Role that is allowed to use the Point Bot
 pointRole = 'POINT_GOD'
-
-# test
 
 # =======================================================================
 intents = discord.Intents.default()
