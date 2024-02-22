@@ -58,6 +58,14 @@ async def menu(ctx):
     pass
 
 
+@bot.command(name='point-event', description='Creates a new event.')
+@commands.has_any_role(pointRole)
+async def point_event(ctx, eventName: str):
+    await ctx.send(f'Creating event {eventName}...')
+    await ctx.send(f'Who is participating in {eventName}?')
+    view = UserListView(eventName, 'participating')
+    await ctx.send('Select users:', view=view)
+
 # =======================================================================
 with open('token.txt', 'r') as file:
     token = file.readline().strip()
